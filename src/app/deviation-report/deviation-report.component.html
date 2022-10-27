@@ -1,0 +1,252 @@
+<!-- Issue report -->
+<div class="container pb-5">
+  <div class="py-5 text-center">
+    <h2>Report form</h2>
+    <p class="lead">Report deviations and events</p>
+  </div>
+
+  <div class="px-5 mx-5">
+    <form>
+      <h4 class="mb-3">Time & Place</h4>
+      <div class="row g-3">
+        <!-- Date of event -->
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="form-label"
+              >Date of deviation
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="On which date did the deviation take place or when was the deviation discovered"
+                ><i class="bi bi-question-circle text-secondary"></i></span
+            ></label>
+            <input
+              type="date"
+              id="start"
+              class="form-control"
+              name="trip-start"
+              data-date-format="dd-mm-yyyy"
+              value="2021-12-10"
+              min="1990-01-01"
+              max="2100-12-31"
+            />
+          </div>
+        </div>
+
+        <!-- Time of event -->
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="form-label"
+              >Time of deviation
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="At approximately what point in time did the deviation take place, or at what time was it discovered"
+                ><i class="bi bi-question-circle text-secondary"></i
+              ></span>
+            </label>
+            <input
+              type="time"
+              class="form-control"
+              name="trip-start"
+              value="12:34"
+            />
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label class="form-label"
+              >Location
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="Describe the location of which the deviation took place"
+                ><i class="bi bi-question-circle text-secondary"></i
+              ></span>
+            </label>
+            <div class="input-group">
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                required
+                placeholder="Example: First floor, room 36 "
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Person responsible -->
+        <!-- Searchable dropdown -->
+        <!-- <div class="form-group">
+            <label for="" class="form-label">Person responsible</label>
+          </div> -->
+
+        <hr class="my-4" />
+
+        <h4 class="mb-3">General Information</h4>
+        <!-- Subject -->
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label class="form-label"
+              >Subject
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="With a few words, describe the deviation"
+                ><i class="bi bi-question-circle text-secondary"></i
+              ></span>
+            </label>
+            <div class="input-group">
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                required
+                placeholder="Example: Broken monitor"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Type of event -->
+        <div class="form-group">
+          <label class="form-label"
+            >Type of event
+            <span
+              class="target"
+              data-bs-placement="top"
+              title="Select a term which most accurately describe the severity of your deviation"
+              ><i class="bi bi-question-circle text-secondary"></i
+            ></span>
+          </label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select deviation</option>
+            <option value="1">Error</option>
+            <option value="2">Inadequacy</option>
+            <option value="3">Accident</option>
+            <option value="3">Near miss</option>
+            <option value="3">Improvement</option>
+            <option value="3">Internal audit</option>
+            <option value="3">External audit</option>
+            <option value="3">Observation</option>
+            <option value="3">Unsafe act</option>
+            <option value="3">Unsafe condition</option>
+            <option value="3">Other</option>
+          </select>
+        </div>
+
+        <!-- Description of deviation, including location of deviation -->
+        <div class="form-group">
+          <label class="form-label"
+            >Describe the deviation
+            <span
+              class="target"
+              data-bs-placement="top"
+              title="Describe the deviation and how it occured"
+              ><i class="bi bi-question-circle text-secondary"></i></span
+          ></label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <!-- Description the chain of events that lead to the deviation -->
+        <div class="form-group">
+          <label class="form-label"
+            >Describe the chain of events that lead to the deviation
+            <span class="text-secondary py">(Optional)</span>
+            <span
+              class="target"
+              data-bs-placement="top"
+              title="What happened prior to the deviation that lead to the deviation taking place"
+              ><i class="bi bi-question-circle text-secondary ps-1"></i></span
+          ></label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <!-- Steps taken in order to improve or help the deviation, and the effects of these steps -->
+        <div class="form-group">
+          <label class="form-label"
+            >Steps taken in order to improve or help the deviation, and the
+            effects of these steps
+            <span class="text-secondary py">(Optional)</span>
+            <span
+              class="target"
+              data-bs-placement="top"
+              title="Describe if any, what measures have been done in order help the deviation and what are the effects of these measures"
+              ><i class="bi bi-question-circle text-secondary ps-1"></i></span
+          ></label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <hr class="my-4" />
+        <!-- People involved -->
+        <h4 class="mb-3">People involved</h4>
+        <div class="col-sm-12 pb-3">
+          <div class="form-group">
+            <label class="form-label"
+              >Person responsible
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="Name the person or people involved in the deviation"
+                ><i class="bi bi-question-circle text-secondary"></i></span
+            ></label>
+            <div class="input-group">
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                required
+                placeholder="Example: John Doe"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Reported by -->
+        <div class="col-sm-6">
+          <div class="form-group">
+            <div class="d-flex justify-content-start">
+              <label class="form-label pe-2">Report made by:</label>
+              <p class="text-secondary">Lorem Ipsum</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <div class="d-flex justify-content-start">
+              <label class="form-label pe-2">Email:</label>
+              <p class="text-secondary">Lorem@ipsum.com</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Submit form button -->
+        <button class="btn btn-primary btn-lg">
+          <i class="bi bi-arrow-right"></i> Submit report
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

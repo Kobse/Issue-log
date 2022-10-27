@@ -1,0 +1,80 @@
+<div class="container p-5 mt-5">
+  <!-- Issue log title -->
+  <h2>Issue log</h2>
+
+  <div class="row align-items-center pt-3">
+    <!-- Filters -->
+    <div class="col-6">
+      <div class="row">
+        <div class="col-6">
+          <!-- Searchbar -->
+          <app-searchbar></app-searchbar>
+        </div>
+        <div class="col-6">
+          <!-- Add filter dropdown -->
+          <app-add-filter-dropdown></app-add-filter-dropdown>
+        </div>
+      </div>
+    </div>
+    <!-- Action buttons -->
+    <div class="col-6 text-end">
+      <div class="d-flex justify-content-end">
+        <!-- Export to Excel -->
+        <div>
+          <button class="btn border-secondary text-secondary rounded-pill me-3">
+            <i class="bi bi-download pe-1"></i> Export to Excel
+          </button>
+        </div>
+        <div>
+          <!-- Actions select dropdown -->
+          <select
+            class="
+              form-select
+              rounded-pill
+              bg-light
+              border-secondary
+              text-secondary
+            "
+            aria-label="Default select example"
+          >
+            <option selected>Actions</option>
+            <!-- <option value="1">Remove selected</option>
+            <option value="2">Mark as completed</option>
+            <option value="3">Mark as in progress</option>
+            <option value="3">Mark as inactive</option> -->
+          </select>
+        </div>
+        <div>
+          <!-- New Report -->
+          <a
+            routerLink="/reporting-form"
+            class="btn btn-primary text-light rounded-pill ms-3"
+          >
+            <i class="bi bi-plus-lg"></i> New Report
+          </a>
+        </div>
+      </div>
+
+      <!-- Delete Report -->
+      <!-- <button class="btn btn-danger text-light rounded-pill">
+        <i class="bi bi-x-lg"></i> Delete Report
+      </button> -->
+    </div>
+  </div>
+  <!-- Active filters -->
+  <!-- <app-active-filters></app-active-filters> -->
+
+  <!-- Table data -->
+  <app-activity-table></app-activity-table>
+
+  <!-- <app-reporting-form></app-reporting-form>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Tooltip on top"
+    >
+      Tooltip on top
+    </button> -->
+</div>

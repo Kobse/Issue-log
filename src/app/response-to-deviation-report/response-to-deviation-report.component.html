@@ -1,0 +1,197 @@
+<!-- Container -->
+<div class="container pb-5">
+  <!-- Deviation Response Form -->
+  <section class="py-5 text-center">
+    <div class="revenue-card">
+      <div class="d-flex align-items-center justify-content-center pb-3">
+        <div
+          class="
+            card-icon
+            rounded-circle
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+        >
+          <i class="bi bi-journal-arrow-up"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End Revenue Card -->
+    <h2 class="">Deviation Response Form</h2>
+    <p class="lead">Respond to deviations and events</p>
+  </section>
+  <!-- End of Deviation Response Form -->
+
+  <!--Form Container -->
+  <div class="px-5 mx-5">
+    <!-- Form -->
+    <form>
+      <!-- TODO: Auto fill in current date and time -->
+      <h4 class="mb-3">Time & Place</h4>
+      <div class="row g-3">
+        <!-- Date of event -->
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="form-label"
+              >Date of action
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="The date of which the action performed"
+                ><i class="bi bi-question-circle text-secondary"></i></span
+            ></label>
+            <input
+              type="date"
+              id="start"
+              class="form-control"
+              name="trip-start"
+              data-date-format="dd-mm-yyyy"
+              value="2021-12-10"
+              min="1990-01-01"
+              max="2100-12-31"
+            />
+          </div>
+        </div>
+
+        <!-- Time of event -->
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="form-label"
+              >Time of action
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="At approximately what point in time was the action performed"
+                ><i class="bi bi-question-circle text-secondary"></i
+              ></span>
+            </label>
+            <!-- TODO: Set value to current time -->
+            <input
+              type="time"
+              class="form-control"
+              name="trip-start"
+              value="12:34"
+            />
+          </div>
+        </div>
+
+        <!-- Person responsible -->
+        <!-- Searchable dropdown -->
+        <!-- <div class="form-group">
+            <label for="" class="form-label">Person responsible</label>
+          </div> -->
+
+        <!-- Separator -->
+        <hr class="my-4" />
+
+        <h4 class="mb-3">General Information</h4>
+
+        <!-- TODO: Upload file field -->
+
+        <!-- Description of deviation, including location of deviation -->
+        <div class="form-group">
+          <label class="form-label"
+            >Describe the action(s) taken
+            <span
+              class="target"
+              data-bs-placement="top"
+              title="Describe what was done in order to resolve the deviation"
+              ><i class="bi bi-question-circle text-secondary"></i></span
+          ></label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <hr class="my-4" />
+        <!-- People involved -->
+        <h4 class="mb-3">People involved</h4>
+        <div class="col-sm-12 pb-3">
+          <div class="form-group">
+            <label class="form-label"
+              >Person(s) responsible
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="Name the person or people involved in the action"
+                ><i class="bi bi-question-circle text-secondary"></i></span
+            ></label>
+            <div class="input-group">
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                required
+                placeholder="Example: John Doe"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Reported by -->
+        <div class="col-sm-6">
+          <div class="form-group">
+            <div class="d-flex justify-content-start">
+              <label class="form-label pe-2">Report made by:</label>
+              <p class="text-secondary">Admin user</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <div class="d-flex justify-content-start">
+              <label class="form-label pe-2">Email:</label>
+              <p class="text-secondary">Admin@user.com</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Type of event -->
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label class="form-label"
+              >Status
+              <span
+                class="target"
+                data-bs-placement="top"
+                title="Select the current status for the deviation"
+                ><i class="bi bi-question-circle text-secondary"></i
+              ></span>
+            </label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select status</option>
+              <option value="inactive">Inactive</option>
+              <option value="in progress">In progress</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Submit form button -->
+        <div class="form-group row pb-5 mt-5">
+          <div class="col-sm-6">
+            <button class="btn btn-primary btn">
+              <i class="bi bi-arrow-right"></i> Submit Response
+            </button>
+          </div>
+          <div
+            class="col-sm-6 d-flex p-0 m-0 align-items-end justify-content-end"
+          >
+            <p class="text-secondary m-0">
+              <i class="bi bi-x"></i> Delete action
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Form end -->
+  </div>
+  <!-- Form container end -->
+</div>
+<!-- End of Container -->

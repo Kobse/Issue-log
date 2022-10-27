@@ -1,0 +1,114 @@
+// <-- Bootstrap styling changes -->
+// Tables
+$table-accent-bg: #f4f6fb;
+$table-striped-bg: #ffffff;
+$table-hover-bg: #f1f2f3;
+$table-border-color: #e2e7ec;
+$table-cell-padding-y: 15px;
+$table-cell-padding-x: 15px;
+
+// Forms
+$input-placeholder-color: #aaaeb4;
+
+// <-- Colors from bootstrap -->
+$primary: #635bff;
+$secondary: #4a587d;
+$success: #10b981;
+$danger: #f43f5e;
+$dark: #313846;
+
+// <-- Custom colors -->
+
+// <-- Bootstrap -->
+@import "../node_modules/bootstrap/scss/bootstrap";
+// <-- Bootstrap icons -->
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// Global styles
+body {
+  // background-color: #f8f9fa;
+  background-color: #f4f6fb;
+}
+
+// TODO: Adjust color
+.badge-completed {
+  color: #047857;
+  background-color: #d1fae5;
+}
+
+// TODO: Adjust color
+.badge-inProgress {
+  color: #b45309;
+  background-color: #fef3c7;
+}
+
+// TODO: Adjust color
+.badge-inactive {
+  color: #b91c1c;
+  background-color: #fee2e2;
+}
+
+.colorTest {
+  border: 1px solid #d1d5dd;
+  color: #d1d5dd;
+}
+
+.lightgrey {
+  color: #aaaeb4;
+  border: 1px solid #aaaeb4;
+}
+
+// Tool tip
+// .tooltip-inner {
+//   padding: 10px 15px 10px 20px;
+//   background: #ffffff;
+//   color: #6b7280;
+//   border: 1px solid #aaaeb4;
+// }
+
+.tooltip-inner {
+  padding: 10px 15px 10px 15px;
+  border-radius: 12px;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+// Highlight border color between thead, tbody and tfoot.
+.table {
+  > :not(:first-child) {
+    border-top: 1px;
+  }
+}
+
+.lightPurple {
+  background-color: #dddbfc;
+}
+
+.card-icon {
+  font-size: 32px;
+  line-height: 0;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.revenue-card .card-icon {
+  color: #635bff;
+  background: #ebeafc;
+}
+
+.bRadius {
+  border-radius: 10px;
+}
+
+.tableHeaderColor {
+  background-color: #e3e5f0;
+}
+
+.borderColor {
+  // !Different from inner border color
+  border: 1px solid #d1d5dd;
+}
